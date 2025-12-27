@@ -49,5 +49,40 @@ class Hello
         ca ++;
         System.out.println("Character literal after increment: " + ca);
 
+        //Type Casting
+        byte byteVar = 10;
+        int intVar = byteVar; // Implicit casting
+        System.out.println("Implicitly casted int from byte: " + intVar);
+
+        // % (size of byte = 256, range -128 to 127)
+        int intVar2 = 256;
+        byte byteVar2 = (byte) intVar2; // Explicit casting
+        System.out.println("Explicitly casted byte from int (256): " + byteVar2);
+        intVar2 = 257;
+        byteVar2 = (byte) intVar2; // Explicit casting
+        System.out.println("Explicitly casted byte from int (257): " + byteVar2);
+
+        float floatVar = 10.5f;
+        int intVar3 = (int) floatVar; // Explicit casting
+        System.out.println("Explicitly casted int from float (10.5): " + intVar3);
+
+        byte byteVar3 = 100;
+        float floatVar2 = byteVar3; // Implicit casting
+        System.out.println("Implicitly casted float from byte (100): " + floatVar2);
+
+        byte byteVar4 = 50;
+        byte byteVar5 = 60;
+        int intVar4 = byteVar4 + byteVar5; // byte + byte results in int // example of type promotion
+        System.out.println("Result of byte + byte (50 + 60): " + intVar4);
+
+        // Examples of implicit type promotion in expressions
+        byte byteVar6 = 40;
+        short shortVar = 50;    
+        int intVar5 = 100;
+        long longVar = 5000L;
+        float floatVar3 = 5.67f;
+        double doubleVar = 0.1234;
+        double result = byteVar6 + shortVar + intVar5 + longVar + floatVar3 + doubleVar;
+        System.out.println("Result of mixed type expression: " + result);
     }
 }

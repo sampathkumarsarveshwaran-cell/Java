@@ -84,5 +84,36 @@ class Hello
         double doubleVar = 0.1234;
         double result = byteVar6 + shortVar + intVar5 + longVar + floatVar3 + doubleVar;
         System.out.println("Result of mixed type expression: " + result);
+        
+        // Preincrement Vs Post Increment
+        int i1 = 10;
+        i1 ++;
+        System.out.println(i1);
+        ++ i1;
+        System.out.println(i1);
+        int r1 ;
+        r1 = i1;
+        System.out.println(r1);
+        r1 = i1++;
+        System.out.println(r1);
+        System.out.println(i1);
+        r1 = ++i1;
+        System.out.println(r1);
+        System.out.println(i1);
+
+        int aa=5,iii;
+
+        iii=++aa + ++aa + aa++; // iii = 6+7+7 = 20
+        iii=aa++ + ++aa + ++aa; // iii = 8+10+11 = 29
+        aa=++aa + ++aa + aa++;  // aa = 12+13+13 = 38
+
+        System.out.println(aa);
+        System.out.println(iii);
+
+        // a++ -> increments value of a by 1
+        // ++a -> increments value of a by 1
+        // b = a++ -> the value of a before incrementing is assigned to b, then the value of a is incremented
+        // b = ++a -> the value of a is incremented and then assigned to b
+
     }
 }

@@ -14,6 +14,11 @@ class B extends A{
         super(); // Calls constructor or super class (A). Even if we dont specify, Java will internally call super()
         // In super if we pass n, then it will look for Constructor which takes one paramter and runs that instead of default constructor. 
         // super(n) -> will call -> A(int n)
+        
+
+        // this(); // this will call the constructor of the current class. 
+        
+        
         System.out.println("B - Parameterized Constructor");
     }
 }

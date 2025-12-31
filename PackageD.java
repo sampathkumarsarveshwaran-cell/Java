@@ -9,3 +9,19 @@ public class PackageD {
         PackageDemo1 pd2 = new PackageDemo1();    
     }
 }
+
+/*
+                        Private Default Protected   Public
+Same Class              Y       Y       Y           Y
+Same Package SubClass   N       Y       Y           Y
+Same Package Non SubC   N       Y       Y           Y
+Diff Package SubClass   N       N       Y           Y
+Diff Pacakge Non SubC   N       N       N           Y
+
+General Guidelines:
+Classes should be public
+One class per file
+Instance variable should be private
+Method mostly public  
+if method or variable wanted to be used in other package subclass then protected
+*/

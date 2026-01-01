@@ -47,7 +47,7 @@ public class InheritanceDemo {
 /*
 Single Inheritance: Calc -> AdvCalc 
 Multilevel Inheritance: Calc -> AdvCalc -> VeryAdvCalc 
-Multiple Inhertance: NOT SUPPORTED IN JAVA: Calc -> VeryAdvCalc <- AdvCalc 
+Multiple Inhertance: NOT SUPPORTED IN JAVA: AdvCalc extends both Calc and VeryAdvCalc 
 This is because, if there are same method in Calc and AdvCalc, java cannot figure out which one to use. 
 Note: First it will look for method in the local class then on the parent class. 
 */

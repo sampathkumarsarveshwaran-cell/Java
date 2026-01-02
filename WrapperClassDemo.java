@@ -12,7 +12,7 @@ public class WrapperClassDemo {
 
         String s1 = "12";
         int i2 = Integer.parseInt(s1);
-        System.out.println(i2*2);
+        System.out.println(i2*2); // Prints 24
 
     }
 }
